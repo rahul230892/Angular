@@ -1,0 +1,20 @@
+<div style="text-align:center">
+  <h1>
+    {{title}}!
+  </h1>
+
+  <button (click)="call()">serverCall</button>
+</div>
+
+<div>
+  <h1>records are::::</h1>
+    <ul>
+      <li *ngFor="let item of record">
+        {{item.name}}
+        {{item.url}} 
+
+      </li>
+    </ul>
+  
+</div>
+
